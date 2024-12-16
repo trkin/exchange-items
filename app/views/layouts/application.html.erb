@@ -23,6 +23,31 @@
   </head>
 
   <body>
+    <header>
+      <div class="logo">Book Exchange</div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+      <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">How It Works</a>
+          <a href="#">Sign Up</a>
+          <a href="#">Languages</a>
+      </nav>
+    </header>
     <%= yield %>
+    <footer>
+      <p>&copy; 2024 Book Exchange Service. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+  <script>
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+  </script>
   </body>
 </html>
