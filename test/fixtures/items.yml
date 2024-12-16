@@ -1,0 +1,6 @@
+item:
+  user: user
+  city: city
+  name: My Item
+  category: books
+  status: draft
